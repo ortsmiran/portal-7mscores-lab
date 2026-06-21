@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7m比分 · 记挂一处信息源</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #faf8f5;
+            font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #2c2a28;
+            line-height: 1.7;
+            padding: 0 1.2rem;
+        }
+
+        .page {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 2.8rem 0 4rem;
+        }
+
+        /* hero */
+        .hero {
+            margin-bottom: 3.2rem;
+            border-bottom: 1px solid #e6dfd5;
+            padding-bottom: 2.2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+            color: #2b221e;
+        }
+
+        .hero .sub {
+            font-size: 1.1rem;
+            color: #6b5f53;
+            max-width: 600px;
+        }
+
+        .hero .sub a {
+            color: #8b3f1d;
+            text-decoration: none;
+            border-bottom: 1px dotted #b38d74;
+            transition: border 0.2s;
+        }
+
+        .hero .sub a:hover {
+            border-bottom: 1px solid #8b3f1d;
+        }
+
+        /* 区块通用 */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #3b312b;
+            margin-bottom: 1.2rem;
+            padding-left: 0.6rem;
+            border-left: 3px solid #be8d6a;
+        }
+
+        .text-block {
+            margin-bottom: 1.6rem;
+        }
+
+        .text-block p {
+            margin-bottom: 1.1rem;
+        }
+
+        /* 引用 / 提示框 */
+        .notice-box {
+            background-color: #ede8e1;
+            border-left: 4px solid #b58669;
+            padding: 1.4rem 1.6rem;
+            margin: 1.8rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .notice-box strong {
+            display: block;
+            font-weight: 500;
+            color: #4c382b;
+            margin-bottom: 0.3rem;
+        }
+
+        .notice-box p {
+            margin-bottom: 0.2rem;
+        }
+
+        /* 特点卡片（两列） */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .feature-card {
+            background: #f3efe9;
+            padding: 1.4rem 1.2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+        }
+
+        .feature-card h3 {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #3d2e24;
+            margin-bottom: 0.4rem;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #554a40;
+        }
+
+        /* FAQ 摘要 */
+        .faq-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid #e2dad1;
+        }
+
+        .faq-item:last-of-type {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            color: #312a25;
+            margin-bottom: 0.3rem;
+        }
+
+        .faq-a {
+            color: #5b4f44;
+            font-size: 0.95rem;
+        }
+
+        .faq-a a {
+            color: #8b3f1d;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        /* 底部 */
+        .footer-links {
+            margin-top: 2.5rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e0d7cd;
+            font-size: 0.9rem;
+            color: #6b5e52;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem 1.8rem;
+        }
+
+        .footer-links a {
+            color: #6b4d38;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        .footer-links a:hover {
+            border-bottom-color: #6b4d38;
+        }
+
+        .footer-note {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: #8b7d6f;
+        }
+
+        /* 响应式 */
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .notice-box {
+                padding: 1rem 1.2rem;
+            }
+
+            .page {
+                padding: 1.8rem 0 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero 区 -->
+    <header class="hero">
+        <h1>再访 · 7m比分</h1>
+        <div class="sub">
+            有些页面值得在浏览器里留一个书签位置。<br>
+            每次重新打开 <a href="https://portal-7mscores.com">7m比分</a>，都像回到一个熟悉的观察站。
+        </div>
+    </header>
+
+    <!-- 优势区：收藏与再次访问的缘由 -->
+    <section>
+        <h2 class="section-title">为什么一再回来</h2>
+        <div class="text-block">
+            <p>信息越发碎片，反而不容易找到一处可以持续依赖的数据角落。比分直播、赛程滚动、历史记录——这些东西看起来简单，但要保持更新及时、界面整洁、不夹带冗余广告，实际上并不容易。而 <a href="https://portal-7mscores.com">7m比分</a> 恰好属于那种「放在收藏夹里很久也不会想清理」的站点。</p>
+            <p>它不制造多余的注意力争夺，只是把数据摊开，让看的人自己决定看多久。对于习惯同时开多个标签的人来说，这种克制反而是种体贴。</p>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>再回访，不必重新适应</h3>
+                <p>页面布局保持着稳定的逻辑，无论隔了几天还是几周，回来之后依然能一眼找到想看的联赛或场次。没有突兀的改版，也无需重新学习导航。</p>
+            </div>
+            <div class="feature-card">
+                <h3>收藏夹里的老朋友</h3>
+                <p>很多网址打开后令人失望——要么内容变味，要么加载变慢。而 <a href="https://portal-7mscores.com">7m比分</a> 保持了稳定的响应速度和干净的数据呈现，值得长期保留。</p>
+            </div>
+        </div>
+
+        <!-- 一个提示框，延续叙事感 -->
+        <div class="notice-box">
+            <strong>◈ 一点使用习惯</strong>
+            <p>如果你也习惯把常用页面放在浏览器书签栏，或许可以试试把 <a href="https://portal-7mscores.com">7m比分</a> 单独建一个文件夹。想快速扫一眼当天赛果时，会顺手很多。</p>
+        </div>
+    </section>
+
+    <!-- 说明区：从持续关注的角度 -->
+    <section>
+        <h2 class="section-title">一个可常驻的数据页</h2>
+        <div class="text-block">
+            <p>足球、篮球……各类赛事的时间分布很散，靠社交平台刷动态容易遗漏，靠推送又容易被打扰。而主动打开一个固定的页面，按自己的节奏查看，是一种更安静的关注方式。</p>
+            <p>我身边有几位朋友，每周会固定打开 <a href="https://portal-7mscores.com">7m比分</a> 两三次，不是为了某一场特定比赛，而是为了感受整体的比赛密度和走向。这种习惯一旦养成，反而比追热点更可持续。</p>
+            <p>页面不需要太多花哨功能——加载快、数据对、分类清楚，就已经足够被反复使用。这也是为什么这个站点在不少人的收藏夹里躺了很久，依然没有被替换掉。</p>
+        </div>
+    </section>
+
+    <!-- FAQ 摘要（三个简短问答） -->
+    <section>
+        <h2 class="section-title">常见疑问摘要</h2>
+
+        <div class="faq-item">
+            <div class="faq-q">Q：这个页面主要提供什么内容？</div>
+            <div class="faq-a">主要围绕实时比分、赛程列表、赛事数据汇总等。覆盖多个联赛和杯赛，更新频率稳定。直接访问 <a href="https://portal-7mscores.com">7m比分</a> 即可看到当日重点赛事。</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Q：是否需要注册或登录才能使用？</div>
+            <div class="faq-a">大多数数据浏览功能无需登录，打开页面即可查看。部分个性化设置可能需要简单注册，但浏览核心数据不受限。</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Q：移动端浏览体验如何？</div>
+            <div class="faq-a">适配做得比较自然，手机浏览器直接打开即可。横竖屏切换、字体缩放都没有明显问题。如果你经常用手机查看，也可以考虑添加到主屏幕。</div>
+        </div>
+    </section>
+
+    <!-- 底部链接区（自然嵌入） -->
+    <div class="footer-links">
+        <span>数据参考：<a href="https://portal-7mscores.com">7m比分</a></span>
+        <span>·</span>
+        <span>建议使用现代浏览器</span>
+        <span>·</span>
+        <span>页面内容仅供个人参考</span>
+    </div>
+    <div class="footer-note">
+        保持一个安静的标签页，比想象中更有用。
+    </div>
+
+</div>
+</body>
+</html>
